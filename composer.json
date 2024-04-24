@@ -1,0 +1,46 @@
+{
+    "name": "flagtickgroup/sitemap",
+    "description": "FlagtickGroup Sitemap package for Laravel.",
+    "homepage": "https://www.flagtickgroup.com",
+    "keywords": ["laravelium", "laravel", "php", "sitemap", "generator", "xml", "html", "google-news"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vuong Nguyen",
+            "email": "admin@flagtick.com",
+            "role": "Developer",
+            "homepage": "https://www.flagtickgroup.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Laravelium/laravel-sitemap/issues",
+        "source": "https://github.com/Laravelium/laravel-sitemap",
+        "wiki": "https://github.com/Laravelium/laravel-sitemap/wiki"
+    },
+    "require": {
+        "php": "^8.0.2",
+        "illuminate/support": "~5.0|~6.0|~7.0|^8.0|^9.0|^10.0",
+        "illuminate/console": "~5.0|~6.0|~7.0|^8.0|^9.0|^10.0",
+        "illuminate/filesystem": "^9.52"
+    },
+    "require-dev": {
+        "laravel/framework": "^9.0",
+        "phpunit/phpunit": "^9.3",
+        "orchestra/testbench-core": "^6.0",
+        "php-coveralls/php-coveralls" : "^2.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "FlagtickGroup\\Sitemap": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FlagtickGroup\\Sitemap\\SitemapServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
